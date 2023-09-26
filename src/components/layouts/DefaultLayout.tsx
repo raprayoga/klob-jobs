@@ -9,7 +9,7 @@ export default function DefaultLayout({
   return (
     <>
       <Header />
-      <main className="container mt-20">{children}</main>
+      <main className="container mx-auto mt-20">{children}</main>
     </>
   )
 }

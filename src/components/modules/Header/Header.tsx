@@ -2,7 +2,7 @@ import React from 'react'
 import { cn } from '@/utils'
 import Image from 'next/image'
 import Link from 'next/link'
-import LogoImage from '@/assets/logo.png'
+import LogoImage from '@/assets/images/logo.png'
 
 const Header = React.forwardRef<
   HTMLDivElement,

@@ -22,6 +22,9 @@ const config: Config = {
       strokeWidth: {
         '4': '4px',
       },
+      gridTemplateColumns: {
+        'fill-14': 'repeat(auto-fill, minmax(14rem, 1fr))',
+      },
     },
   },
   plugins: [],
