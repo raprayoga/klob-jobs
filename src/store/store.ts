@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
-import vacancySlice from './vacancy'
+import vacacncyReducer from './vacancy'
+import toastReducer from './toast'
 
 export default configureStore({
   reducer: {
-    vacancy: vacancySlice,
+    toast: toastReducer,
+    vacancy: vacacncyReducer,
   },
 })

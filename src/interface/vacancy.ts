@@ -12,7 +12,7 @@ export interface Vacancy {
   postedDate: string
 }
 
-export interface VacancySlice {
+export interface VacancySliceState {
   isFirst: boolean
   isBusy: boolean
   data: Vacancy[]

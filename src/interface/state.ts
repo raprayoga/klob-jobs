@@ -1,5 +1,7 @@
-import { VacancySlice } from './vacancy'
+import { VacancySliceState } from './vacancy'
+import { ToastSliceState } from './toast'
 
 export interface sliceState {
-  vacancy: VacancySlice
+  vacancy: VacancySliceState
+  toast: ToastSliceState
 }
