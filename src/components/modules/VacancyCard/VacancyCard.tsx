@@ -31,9 +31,9 @@ interface VacancyProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 const VacancyCard = React.forwardRef<HTMLDivElement, VacancyProps>(
-  ({ vacancy, children, ...props }, ref) => {
+  ({ vacancy, children, className, ...props }, ref) => {
     return (
-      <Card {...props} ref={ref} className={cn('w-full', props.className)}>
+      <Card {...props} ref={ref} className={cn('w-full', className)}>
         <Image
           src={vacancy.corporateLogo}
           alt="corporate logo"

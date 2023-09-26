@@ -6,11 +6,12 @@ import VacancyCard from '@/components/modules/VacancyCard'
 import { sendApplication } from '@/store/vacancy'
 import { Vacancy } from '@/interface/vacancy'
 import { showToast } from '@/store/toast'
+import { cn } from '@/utils'
 
 const JobVacancy = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
->(({ ...props }, ref) => {
+>(({ className, ...props }, ref) => {
   const dispatch: Dispatch<any> = useDispatch()
   const vacancies = useSelector((state: sliceState) => state.vacancy.data)
 
@@ -29,7 +30,7 @@ const JobVacancy = React.forwardRef<
 
   return (
     <div
-      className="grid grid-cols-fill-14 items-start gap-5"
+      className={cn('grid grid-cols-fill-14 items-start gap-5', className)}
       {...props}
       ref={ref}
     >
