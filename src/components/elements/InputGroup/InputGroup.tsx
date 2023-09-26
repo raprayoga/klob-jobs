@@ -1,5 +1,5 @@
-import * as React from "react";
-import { cn } from "@/utils";
+import * as React from 'react'
+import { cn } from '@/utils'
 
 const InputGroup = React.forwardRef<
   HTMLDivElement,
@@ -8,14 +8,15 @@ const InputGroup = React.forwardRef<
   return (
     <div
       className={cn(
-        "relative flex justify-center items-center p-0 overflow-hidden text-sm",
+        'relative flex items-center justify-center overflow-hidden p-0 text-sm',
         className
       )}
       ref={ref}
       {...props}
+      data-testid="input-container-element"
     />
-  );
-});
-InputGroup.displayName = "InputGroup";
+  )
+})
+InputGroup.displayName = 'InputGroup'
 
-export { InputGroup };
+export { InputGroup }

@@ -31,6 +31,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
         className={cn(inputVariant({ theme }), className)}
         ref={ref}
         {...props}
+        data-testid="input-element"
       />
     )
   }
