@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
 import Card from './index'
 
-describe('Card correctly', () => {
+describe('Card test', () => {
   test('sould render card correctly ', () => {
     render(<Card className={'bg-info'}>Card</Card>)
 
