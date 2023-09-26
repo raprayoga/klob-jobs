@@ -10,7 +10,7 @@ const toastVariant = cva('pr-8 translate-x-[-50%]', {
     theme: {
       danger: 'bg-danger text-white',
       success: 'bg-success text-white',
-      white: 'bg-white border border-shadow',
+      white: 'bg-white border border-shadows',
     },
   },
   defaultVariants: {
