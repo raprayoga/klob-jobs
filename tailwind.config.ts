@@ -19,6 +19,9 @@ const config: Config = {
         'dark-gray': '#6d757d',
         'light-gray': '#a1a6ab',
       },
+      strokeWidth: {
+        '4': '4px',
+      },
     },
   },
   plugins: [],
