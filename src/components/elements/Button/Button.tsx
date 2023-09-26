@@ -13,7 +13,7 @@ const buttonVariants = cva(
         info: 'bg-info text-white hover:opacity-90',
       },
       isDisabled: {
-        true: 'bg-light-gray text-white border-none cursor-none',
+        true: 'bg-light-gray text-white border-none cursor-default hover:opacity-100',
         false: '',
       },
       isLoading: {

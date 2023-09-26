@@ -1,13 +1,22 @@
-import { Inter } from 'next/font/google'
-import DefaultLayout from '@/components/layouts/DefaultLayout'
-import Link from 'next/link'
+import Home from '@/components/templates/Home'
+import { Vacancy } from '@/interface/vacancy'
+import { Dispatch } from '@reduxjs/toolkit'
+import { useDispatch } from 'react-redux'
+import db from '@/assets/db/db.json'
+import { useEffect } from 'react'
+import { overwrite } from '@/store/vacancy'
 
-const inter = Inter({ subsets: ['latin'] })
+export default function HomePage() {
+  const dispatch: Dispatch<any> = useDispatch()
 
-export default function Home() {
+  useEffect(() => {
+    const initVacancies = db.fakeJob
+    dispatch(overwrite(initVacancies))
+  }, [dispatch])
+
   return (
-    <DefaultLayout>
-      <p>INDEX</p>
-    </DefaultLayout>
+    <>
+      <Home />
+    </>
   )
 }
