@@ -7,10 +7,14 @@ import LogoImage from '@/assets/images/logo.png'
 const Header = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
->(({ ...props }, ref) => {
+>(({ className, ...props }, ref) => {
   return (
     <header
-      className={cn('fixed top-0 w-screen bg-shadows py-3', props.className)}
+      {...props}
+      className={cn(
+        'fixed top-0 w-screen bg-shadows px-2 py-3 lg:px-0',
+        className
+      )}
       ref={ref}
       data-testid="header-element"
     >
