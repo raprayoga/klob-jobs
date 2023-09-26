@@ -6,7 +6,7 @@ import Toast from './index'
 const text = 'Toast'
 
 const variants: { theme: 'white' | 'danger' | 'success'; style: string }[] = [
-  { theme: 'white', style: 'bg-white border border-shadow' },
+  { theme: 'white', style: 'bg-white border border-shadows' },
   { theme: 'danger', style: 'bg-danger text-white' },
   { theme: 'success', style: 'bg-success text-white' },
 ]

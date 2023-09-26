@@ -14,7 +14,7 @@ const config: Config = {
         warning: '#f9c000',
         danger: '#dc3545',
         info: '#0d6efd',
-        shaows: '#f8f9fa',
+        shadows: '#f8f9fa',
         secondary: '#cfd4da',
         'dark-gray': '#6d757d',
         'light-gray': '#a1a6ab',

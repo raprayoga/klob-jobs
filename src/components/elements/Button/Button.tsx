@@ -3,7 +3,7 @@ import { cva, type VariantProps } from 'class-variance-authority'
 import { cn } from '@/utils'
 
 const buttonVariants = cva(
-  'lg:px-4 lg:py-2 px-2 py-1 flex items-center justify-center text-center lg:text-sm text-xs rounded cursor-pointer disabled:cursor-not-allowed transition-colors',
+  'lg:px-4 lg:py-2 px-2 py-1 flex items-center justify-center text-center lg:text-sm text-xs rounded cursor-pointer disabled:cursor-none transition-colors',
   {
     variants: {
       theme: {
