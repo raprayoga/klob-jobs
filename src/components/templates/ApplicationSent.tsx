@@ -12,7 +12,7 @@ export default function ApplicationSent() {
         className="mb-2 hidden w-fit gap-1 font-semibold text-blue-500 lg:flex"
       >
         <ArrowLeftIcon className="w-4" />
-        <span>back</span>
+        <span>home</span>
       </Link>
       <h3 className="mb-5 text-lg font-semibold lg:text-3xl">
         Lamaran Terkirim:

@@ -35,7 +35,7 @@ function Toast({
   return (
     isShow && (
       <motion.div
-        className="fixed bottom-2 left-1/2 z-50"
+        className="fixed bottom-2 left-1/2 z-50 w-10/12 md:w-8/12"
         initial={{ opacity: 0, y: '10%' }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3 }}

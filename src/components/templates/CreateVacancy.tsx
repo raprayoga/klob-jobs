@@ -14,10 +14,10 @@ export default function CreateVacancy() {
     <DefaultLayout>
       <Link
         href="/"
-        className="mb-2 hidden gap-1 font-semibold text-blue-500 lg:flex"
+        className="mb-2 hidden w-fit gap-1 font-semibold text-blue-500 lg:flex"
       >
         <ArrowLeftIcon className="w-4" />
-        <span>back</span>
+        <span>home</span>
       </Link>
       <h3 className="mb-5 text-lg font-semibold lg:text-3xl">Buat Lowongan:</h3>
       {firstLoad && (
