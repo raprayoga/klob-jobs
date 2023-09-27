@@ -53,7 +53,7 @@ const CreateVacancyForm = React.forwardRef<
           field: { onChange, onBlur, value },
           fieldState: { isDirty, error },
         }) => (
-          <div className="my-2">
+          <div>
             <label htmlFor="corporateLogo">Logo Perusahaan</label>
             <InputGroup className="mt-1 w-full">
               <Input
@@ -88,7 +88,7 @@ const CreateVacancyForm = React.forwardRef<
           field: { onChange, onBlur, value },
           fieldState: { isDirty, error },
         }) => (
-          <div className="my-2">
+          <div>
             <label htmlFor="corporateName">Nama Perusahaan</label>
             <InputGroup className="mt-2 w-full">
               <Input
@@ -123,7 +123,7 @@ const CreateVacancyForm = React.forwardRef<
           field: { onChange, onBlur, value },
           fieldState: { isDirty, error },
         }) => (
-          <div className="my-2">
+          <div>
             <label htmlFor="positionName">Nama Lowongan</label>
             <InputGroup className="mt-2 w-full">
               <Input
@@ -158,7 +158,7 @@ const CreateVacancyForm = React.forwardRef<
           field: { onChange, onBlur, value },
           fieldState: { isDirty, error },
         }) => (
-          <div className="my-2">
+          <div>
             <label htmlFor="status">Status Karyawan</label>
             <InputGroup className="mt-2 w-full">
               <Input
@@ -275,7 +275,7 @@ const CreateVacancyForm = React.forwardRef<
           field: { onChange, onBlur, value },
           fieldState: { isDirty, error },
         }) => (
-          <div className="my-2">
+          <div>
             <label htmlFor="postedDate">Tanggal Posting</label>
             <InputGroup className="mt-2 w-full">
               <Input
@@ -303,8 +303,8 @@ const CreateVacancyForm = React.forwardRef<
         name="postedDate"
       />
 
-      <Button type="submit" theme="info" className="mt-8 w-full">
-        Login
+      <Button type="submit" theme="info" className="mt-8 w-full lg:w-[100px]">
+        SIMPAN
       </Button>
     </form>
   )
