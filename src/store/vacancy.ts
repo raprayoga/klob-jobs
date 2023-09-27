@@ -37,11 +37,19 @@ export const vacancySlice = createSlice({
         state.data = tempData
       }
     },
+    createVacancy(state, action) {
+      const data = action.payload
+      data.jobVacancyCode = Date.now()
+      data.corporateId = Date.now()
+      const tempData = JSON.parse(JSON.stringify(state.data))
+      tempData.push(data)
+      state.data = tempData
+    },
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { overwrite, sendApplication, cancelApplication } =
+export const { overwrite, sendApplication, cancelApplication, createVacancy } =
   vacancySlice.actions
 
 export default vacancySlice.reducer

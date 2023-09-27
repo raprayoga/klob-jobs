@@ -34,9 +34,8 @@ const Details = React.forwardRef<
       )
     }
   }
-
   let vacancy = vacancies.find(
-    (vacancy) => vacancy.jobVacancyCode === jobVacancyCode
+    (vacancy) => '' + vacancy.jobVacancyCode === '' + jobVacancyCode
   )
 
   useEffect(() => {

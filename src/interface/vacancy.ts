@@ -5,10 +5,21 @@ export interface Vacancy {
   corporateName: string
   status: string
   descriptions: string
-  corporateLogo: 'https://filesdev.klob.id/public/mco01/kzsb9qzp/2022-02-18_175846.jpg'
+  corporateLogo: string
   applied: boolean | null
   salaryFrom: number | null
   salaryTo: number | null
+  postedDate: string
+}
+
+export interface VacancyForm {
+  positionName: string
+  corporateName: string
+  status: string
+  descriptions: string
+  corporateLogo: string
+  salaryFrom: number | string
+  salaryTo: number | string
   postedDate: string
 }
 
