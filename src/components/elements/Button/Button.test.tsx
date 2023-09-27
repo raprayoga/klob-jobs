@@ -48,7 +48,7 @@ describe('Render Button', () => {
     const { buttonElement } = setup({ isDisabled: true })
 
     expect(buttonElement).toHaveClass(
-      'bg-light-gray text-white border-none cursor-none'
+      'bg-light-gray text-white border-none cursor-default'
     )
   })
 
